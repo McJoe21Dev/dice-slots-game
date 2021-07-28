@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='content-language' content='en-gb'>
+    <meta name="" content="">
+    <title>Dice Slots Machine!</title>
+    <style type="text/css" media="all">
+      body {
+        background-color: lightgrey;
+        background-image: url('https://wallpapertag.com/wallpaper/full/3/0/b/792407-full-size-rainbow-stars-backgrounds-1920x1080-for-windows.jpg');
+      }
+      img {
+        width: 20%;
+      }
+      button {
+        width: 150px;
+        font-size: 15px;
+        border-style: outset;
+        border-width: 5px;
+      }
+      .box {
+        width: 95%;
+        background-color: white;
+        max-width: 900px;
+        border-style: inset;
+        border-width: 10px;
+        border-color: grey;
+        align-content: center;
+      }
+      p, u, h2, button, li {
+        font-family: 'Courier New';
+      }
+      h2, h1, u {color: white;}
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id="game" class="page">
+    <h1>Dice Slots Machine</h1>
+    <div class="box">
+      <p id="credits">300 Credits</p>
+      <img src="images/7.jpg" alt="dice" /><img src="images/7.jpg" alt="dice4" /><img src="images/7.jpg" alt="dice4" />
+      <p id="result">Start the game!</p>
+    </div>
+    
+    <button id="spin">SPIN!</button>
+    <button onclick="location.reload()">Reset Game!</button>
+    <button onclick="redeem()">Redeem</button>
+    <input type="checkbox" id="auto_spin" /><p style="color:white">Auto Spin!</p>
+    <br/>
+    
+    <p><u onclick='pages(1)'>Instructions</u></p>
+    <p><u onclick='pages(2)'>Your Stats</u></p>
+    </div>
+    
+    <div id="about" class="page" style="display:none">
+      <h2>About the Game</h2>
+      <div class="box">
+        <p>How to Play</p>
+        <ol>
+          <li>You click the <b>Spin</b> button (spends 5 credits).</li>
+          <li>If you win, it goes into the winnings pot.</li>
+          <li>Click <b>Redeem</b> to get credits back to play with.</li>
+          <li>Reload the page or click <b>Reset Game</b> to restart</li>
+        </ol>
+        <p>General Info</p>
+        <ol>
+          <li>This game this virtual money; has no way to accept real money.</li>
+        </ol>
+      </div>
+      <button onclick="pages(0)">Back</button>
+    </div>
+    
+    <div id="about" class="page" style="display:none">
+    	<h2>Your Stats</h2>
+    	<div class="box">
+    		<ul id="stats"></ul>
+    	</div>
+    	<button onclick="pages(0)">Back</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>var _uox = _uox || {};(function() {var s=document.createElement("script");
+s.src="https://static.usuarios-online.com/uo2.min.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<a href="https://www.usuarios-online.com/en/" data-id="96ca4802c8e9d811b62f2b52c8a3c39d" data-type="default" target="_blank" id="uox_link">users online</a>
+    </center>
+  </body>
+</html>
